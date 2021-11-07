@@ -1424,6 +1424,8 @@ var Plugin = function(Alpine) {
     let evaluate = evaluateLater(expression);
     effect(() => {
       evaluate((options) => {
+        if (!options.targets)
+          options.targets = el;
         (0, import_animejs.default)(options);
       });
     });

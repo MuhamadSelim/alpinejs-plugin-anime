@@ -1,11 +1,13 @@
 {
   "name": "@muhamadselim/alpinejs-plugin-anime",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "alpine.js plugin for animejs",
   "main": "dist/anime.cjs.js",
   "module": "dist/anime.esm.js",
   "unpkg": "dist/anime.min.js",
-  "keywords": [],
+  "keywords": [
+      "alpinejs", "plugins", "animejs", "animation"
+  ],
   "author": "Mohamed Abdelhamid",
   "license": "MIT",
   "dependencies": {

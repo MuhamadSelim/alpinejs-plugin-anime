@@ -5,7 +5,8 @@ const Plugin = function (Alpine) {
         let evaluate = evaluateLater(expression);
         effect(() => {
             evaluate(options => {
-                anime(options);
+                if(!options.targets)  options.targets =  el;
+                anime(options)
             })
         })
         cleanup(() => observer.disconnect())
