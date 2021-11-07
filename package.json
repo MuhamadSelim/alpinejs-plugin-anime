@@ -1,14 +1,15 @@
 {
-  "name": "@victoryoalli/alpinejs-plugin-blueprint",
-  "version": "1.0.0",
-  "description": "Super alpine.js plugin",
-  "main": "dist/plugin.cjs.js",
-  "module": "dist/plugin.esm.js",
-  "unpkg": "dist/plugin.min.js",
+  "name": "@muhamadselim/alpinejs-plugin-anime",
+  "version": "0.1.0",
+  "description": "alpine.js plugin for animejs",
+  "main": "dist/anime.cjs.js",
+  "module": "dist/anime.esm.js",
+  "unpkg": "dist/anime.min.js",
   "keywords": [],
-  "author": "Victor Yoalli",
+  "author": "Mohamed Abdelhamid",
   "license": "MIT",
   "dependencies": {
+    "animejs": "^3.2.1",
     "esbuild": "^0.12.22"
   },
   "scripts": {

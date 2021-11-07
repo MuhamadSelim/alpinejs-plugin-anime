@@ -1,11 +1,18 @@
+import anime from "animejs";
 const Plugin = function (Alpine) {
-    Alpine.directive('plugin', (el, obj, { evaluateLater, effect, cleanup }) => {
+    Alpine.directive('anime', (el, obj, { evaluateLater, effect, cleanup }) => {
         let { value, expression, modifiers } = obj;
         let evaluate = evaluateLater(expression);
-
+        effect(() => {
+            evaluate(options => {
+                anime(options);
+            })
+        })
         cleanup(() => observer.disconnect())
     })
-    Alpine.magic('magic',() => { return 'magic' })
+
+
+    Alpine.magic('anime',() => { return value => anime(value)  })
 }
 
 export default  Plugin
